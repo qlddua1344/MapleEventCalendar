@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset = 'uft-8' />
+        <link rel="stylesheet" type="text/css" href="css.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Maple Event Calendar</h1>
+        <div id="main">
+            <!-- 이벤트 이름 -->
+
+            <!-- 달력 테이블 -->
+            <table id="CalTable">
+                <thead>
+                    <tr>
+                        <th class="prev">&lt;</th>
+                        <th colspan="3" class="year"></th>
+                        <th colspan="2" class="month"></th>
+                        <th class="next">&gt;</th>
+                    </tr>
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
+                </thead>
+                <tbody class="CalDate"></tbody>
+            </table>
+
+            <div class="EventCalc"></div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+*{margin:0; padding:0; box-sizing:border-box; font-family:'Noto Sans KR'; font-weight:300;}
+li{list-style:none;}
+a{text-decoration:none;}
+table, tr, th, td{border:none; box-sizing:border-box; /*border-collapse:collapse; border-spacing:0;*/}
+
+#main{
+    width:800px;
+    margin:0 auto;
+}
+
+h1{
+    padding:30px 40px;
+    background:#eee;
+}
+
+table{
+    width:750px;
+    margin:30px auto;
+}
+
+table thead th{
+    padding:10px;
+    background-color:#ddd;
+}
+
+table td{
+    height:75px;
+    text-align:left;
+    vertical-align:top;
+    padding:6px;
+    background:#ffa646;
+    color:#333;
+    font-weight:400;
+}
+
+table td:hover:not(.today):not(.prev-date):not(.next-date){
+    background-color:rgba(255,166, 70, .5);
+}
+
+.prev-date,
+.next-date{
+    background-color:#aaa;
+}
+
+.prev:hover,
+.next:hover{background-color:#daf; color:#fff;}
+
+.today{
+    background-color:#008100;
+    color:#fff;
+    font-weight:400;
+    position:relative;
+}
+.today:after{
+    content:'오늘';
+    position:absolute;
+    left:6px;
+    top:24px;
+}
+
+.NeoStart, .NeoEnd, .TerraBurningStart, .TerraBurningEnd{
+    color:#fff;
+    font-weight:400;
+    position:relative;
+    background-color:#daf;
+}
+
+.NeoStart:after, .NeoEnd:after, .TerraBurningStart:after, .TerraBurningEnd:after{
+    content:'NEO Start';
+    position:absolute;
+    left:6px;
+    top:24px;
+    font-size:.8rem;
+}
+.TerraBurningStart:after{
+    content:'TerraBurning Start';
+}
+.NeoEnd:after{
+    content:'NEO END';
+}
+.TerraBurningEnd:after{
+    content:'TerraBurning END';
+}
+
+.EventCalc{
+    padding:30px;
+    border:2px solid #000;
+}
